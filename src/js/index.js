@@ -9,6 +9,7 @@ document.addEventListener(`DOMContentLoaded`, () => {
   let birdBottom = 100;
   // Gravedad >
   let gravity = 2;
+  let isGameOver = false;
 
   //> Function <
   startGame = () => {
@@ -18,7 +19,7 @@ document.addEventListener(`DOMContentLoaded`, () => {
   };
 
   //> Intervalo de tiempo >
-  let timeId = setInterval(startGame, 20);
+  let gameTimeId = setInterval(startGame, 20);
   //> Intervalo Claro >
   //clearInterval(timeId);
 
@@ -58,9 +59,19 @@ document.addEventListener(`DOMContentLoaded`, () => {
         clearInterval(timerId);
         gameDisplay.removeChild(obstacle);
       }
+      if (birdBottom === 0) {
+        gameOver();
+      }
     };
 
     let timerId = setInterval(moveObstacle, 20);
+    setTimeout(generateObstacle, 3000);
   };
   generateObstacle();
+
+  function gameOver() {
+    clearInterval(gameTimeId);
+    isGameOver = true;
+    document.removeEventListener(`keyup`, control);
+  }
 });
