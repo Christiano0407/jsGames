@@ -1,5 +1,6 @@
 /*Components*/
 @import url(../css/component/mainBird.css);
+@import url(/src/css/component/keyframeBird.css);
 /*Root*/
 :root {
   --clr-white: #ffffff;

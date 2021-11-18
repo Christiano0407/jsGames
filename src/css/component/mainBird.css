@@ -38,3 +38,20 @@
   position: absolute;
   object-fit: cover;
 }
+.ground {
+  background-image: url("/src/assets/img/bottom-background.png");
+  object-fit: cover;
+  position: absolute;
+  width: 60px;
+  height: 150px;
+  top: 500px;
+  z-index: +1;
+}
+.bird {
+  background-image: url("/src/assets/img/flappy-bird.png");
+  width: 60px;
+  height: 45px;
+  position: absolute;
+  left: 220px;
+  bottom: absolute;
+}
