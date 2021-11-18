@@ -1,0 +1,34 @@
+/*Components*/
+@import url(../css/component/mainBird.css);
+/*Root*/
+:root {
+  --clr-white: #ffffff;
+  --clr-black: #000000;
+}
+/*General CSS Style*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body {
+  width: 100%;
+  display: flex;
+}
