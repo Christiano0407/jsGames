@@ -1,0 +1,40 @@
+.border-left {
+  width: 80px;
+  height: 790px;
+  position: absolute;
+  background-color: var(--clr-white);
+  z-index: +2;
+  border: 1px solid lightblue;
+}
+.game-container {
+  width: 500px;
+  height: 730px;
+  position: absolute;
+  left: 80px;
+  border: 1px solid lightgreen;
+}
+.border-top {
+  width: 660px;
+  height: 50px;
+  position: absolute;
+  background-color: var(--clr-white);
+  z-index: +2;
+  top: -50px;
+  border: 1px solid lightsalmon;
+}
+.border-right {
+  width: 80px;
+  height: 790px;
+  position: absolute;
+  background-color: var(--clr-white);
+  z-index: +2;
+  left: -500px;
+  border: lightseagreen;
+}
+.sky {
+  background-image: url("/src/assets/img/fb-game-background.png");
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  object-fit: cover;
+}
