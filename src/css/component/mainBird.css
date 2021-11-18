@@ -73,3 +73,9 @@
   object-fit: cover;
   /*Keyframes / Animation*/
 }
+.obstacle {
+  background-color: green;
+  width: 60px;
+  height: 300px;
+  position: absolute;
+}
