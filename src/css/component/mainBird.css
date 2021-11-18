@@ -4,14 +4,14 @@
   position: absolute;
   background-color: var(--clr-white);
   z-index: +2;
-  border: 1px solid lightblue;
+  /* border: 1px solid lightblue; */
 }
 .game-container {
   width: 500px;
   height: 730px;
   position: absolute;
   left: 80px;
-  border: 1px solid lightgreen;
+  /* border: 1px solid lightgreen; */
 }
 .border-top {
   width: 660px;
@@ -20,7 +20,7 @@
   background-color: var(--clr-white);
   z-index: +2;
   top: -50px;
-  border: 1px solid lightsalmon;
+  /*  border: 1px solid lightsalmon; */
 }
 .border-right {
   width: 80px;
@@ -29,7 +29,7 @@
   background-color: var(--clr-white);
   z-index: +2;
   left: -500px;
-  border: lightseagreen;
+  /* border: lightseagreen; */
 }
 .sky {
   background-image: url("/src/assets/img/fb-game-background.png");
@@ -54,4 +54,22 @@
   position: absolute;
   left: 220px;
   bottom: absolute;
+}
+.ground-container {
+  height: 150px;
+  width: 500px;
+  left: 80px;
+  position: absolute;
+  /* border: 2px solid red; */
+}
+.ground-moving {
+  width: 100%;
+  z-index: +1;
+  position: absolute;
+  top: 500px;
+  height: 150px;
+  background-image: url("/src/assets/img/bottom-background.png");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  /*Keyframes / Animation*/
 }
