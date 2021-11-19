@@ -20,6 +20,8 @@ const spriteHeight = 523;
 //> Empezar de principio ( position) <
 let frameX = 0; // 0 * spriteWidth
 let frameY = 0; // 0 * spriteHeight
+let gameFrame = 0; // => Evitar los espacios en blanco <
+const staggerFrames = 2; //> Escalamiento / frameworks / v + a (velocidad + acelera)
 
 //> Crear animation <
 function animate() {
@@ -39,6 +41,12 @@ function animate() {
     CANVAS_WIDTH,
     CANVAS_HEIGHT
   );
+  //> Recorrido por frameworks <
+  if (gameFrame % staggerFrames == 0) {
+    if (frameX < 6) frameX++;
+    else frameX = 0;
+  }
+  gameFrame++;
   //> peticion
   requestAnimationFrame(animate);
 }
