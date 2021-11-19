@@ -1,0 +1,2 @@
+// Kaboom Js / Init
+kaboom();
