@@ -35,7 +35,7 @@ document.addEventListener(`DOMContentLoaded`, () => {
     if (birdBottom < 500) birdBottom += 50;
     bird.style.bottom = birdBottom + `px`;
 
-    //console.log(birdBottom);
+    console.log(birdBottom);
   };
   //> Tipo teclado arriba>
   document.addEventListener(`keyup`, jump);
@@ -59,11 +59,16 @@ document.addEventListener(`DOMContentLoaded`, () => {
         clearInterval(timerId);
         gameDisplay.removeChild(obstacle);
       }
+      //> Condicional de rango de movimiento en "px" / al obstáculo>>
       if (
-        (obstacleLeft > 200 && obstacleLeft < 280 && birdLeft === 220) ||
+        (obstacleLeft > 200 &&
+          obstacleLeft < 280 &&
+          birdLeft === 220 &&
+          birdBottom < obstacleBottom + 150) ||
         birdBottom === 0
       ) {
         gameOver();
+        clearInterval(timerId);
       }
     };
 
