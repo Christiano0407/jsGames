@@ -24,7 +24,7 @@ Learn Javacript Vanilla with Games.
 
 > $ npm install kaboom
 
-> Ania Kubow
+## Ania Kubow / Projects VideoGames / Repositories
 
 - [Flappy Bird](https://www.youtube.com/watch?v=gxHcW84izz0&t=4s)
   > Repo GitHub
