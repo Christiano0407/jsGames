@@ -30,6 +30,18 @@ Learn Javacript Vanilla with Games.
   > Repo GitHub
 - [Repo](https://github.com/kubowania/flappy-bird)
 
+## Franks Laboratory
+
+> Game for Beginners
+
+- [Game Beginners](https://www.youtube.com/watch?v=pyhb8Y9qKUI&t=870s)
+  > Sprites Animation
+- [Sprite Animation](https://www.youtube.com/watch?v=CY0HE277IBM)
+  > Background Parallax
+- [Parallax](https://www.youtube.com/watch?v=Mg7ibYWhjPI&t=0s)
+  > Resources
+- [bevouliin-sprite](https://bevouliin.com/)
+
 > Flappy Bird
 
 - A game of Flappy Bird made in pure JavaScript, HTML and CSS

@@ -1,0 +1,34 @@
+/*Components*/
+
+/*Root*/
+:root {
+  --clr-white: #ffffff;
+  --clr-black: #000000;
+}
+/* Style Main*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-position: center;
+}
+p {
+  letter-spacing: 1;
+}
+body {
+  width: 100%;
+}
