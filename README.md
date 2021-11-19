@@ -20,6 +20,9 @@ Learn Javacript Vanilla with Games.
   > Kaboom GitHub
 - [gitHub_Kaboom](https://github.com/replit/kaboom)
 
+  > npm Install
+  > $ npm install kaboom
+
   > Ania Kubow
 
 - [Flappy Bird](https://www.youtube.com/watch?v=gxHcW84izz0&t=4s)
