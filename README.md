@@ -5,11 +5,12 @@ Learn Javacript Vanilla with Games.
 # Learn Javascript with Games
 
 - [Zelda Game](https://www.youtube.com/watch?v=XX93O4ZVUZI&t=11s)
-  ####Javascript
-  <script src="https://unpkg.com/kaboom/dist/kaboom.js"></script>
-  <script>
-  kaboom()
-  </script>
+  > Init Javascript Kaboom
+  > Javascript
+    <script src="https://unpkg.com/kaboom/dist/kaboom.js"></script>
+    <script>
+    kaboom()
+    </script>
 
 ## Libraries
 
