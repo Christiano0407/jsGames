@@ -72,6 +72,18 @@ Learn Javacript Vanilla with Games.
   > https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js
   > css-Trick Animation
 - [Animation-CSSTricks](https://css-tricks.com/tips-for-writing-animation-code-efficiently/)
+  > Tween
+- Un Tween es lo que hace todo el trabajo de animación: piense en ello como un setter de propiedades de alto rendimiento. Alimenta los destinos (los objetos que desea animar), una duración y cualquier propiedad que desee animar y, cuando su cabezal de reproducción se mueve a una nueva posición, calcula cuáles deberían ser los valores de propiedad en ese momento y los aplica en consecuencia.
+- Métodos comunes para crear una interpolación (todos estos métodos devuelven una instancia de interpolación):
+- gsap.to()
+- gsap.from()
+- gsap.fromTo()
+  > gsap.to(".box", {rotation: 27, x: 100, duration: 1});
+  > let tween = gsap.to(".class", {rotation: 360, duration: 5, ease: "elastic"});
+- tween.pause();
+- tween.seek(2);
+- tween.progress(0.5);
+- tween.play();
 
 # MIT License
 
