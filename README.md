@@ -56,6 +56,23 @@ Learn Javacript Vanilla with Games.
 - I hope you enjoy the video, please don't forget to like, comment and subscribe for more if you have enjoyed watching!
 - As always, please do share your finished games with me on My Twitter.
 
+# GSAP Animation
+
+> Library Animation Javascript
+
+- [gsap](https://greensock.com/)
+  > GSAP Docs
+- [GSAP Docs](https://greensock.com/docs/)
+  > Line Time
+- [timeLine](https://greensock.com/docs/v3/GSAP/Timeline)
+  > Interpolation
+- [Interpolation](https://greensock.com/docs/v3/GSAP/Tween)
+  > CDN
+- [GSAP CDN](https://cdnjs.com/libraries/gsap)
+  > https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js
+  > css-Trick Animation
+- [Animation-CSSTricks](https://css-tricks.com/tips-for-writing-animation-code-efficiently/)
+
 # MIT License
 
 MIT License
