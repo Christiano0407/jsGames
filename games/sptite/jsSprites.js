@@ -30,9 +30,12 @@ function animate() {
   //ctx.fillRect(x, 50, 100, 100);
   //> img / Tomar el sprite (encuadrar)
   //ctx.drawImage(Image, sx, sy, sw, sh, dx, dy, dw, dh);
+  let position = Math.floor(gameFrame / staggerFrames) % 6;
+  frameX = spriteWidth * position;
   ctx.drawImage(
     playerImg,
-    frameX * spriteWidth, // Img => recorrido Ancho / Horizontal
+    //frameX * spriteWidth, // Img => recorrido Ancho / Horizontal
+    frameX,
     frameY * spriteHeight, // Recorrido => recorrido Alto / Vertical
     spriteWidth,
     spriteHeight,
@@ -42,10 +45,10 @@ function animate() {
     CANVAS_HEIGHT
   );
   //> Recorrido por frameworks <
-  if (gameFrame % staggerFrames == 0) {
-    if (frameX < 6) frameX++;
-    else frameX = 0;
-  }
+  /* if (gameFrame % staggerFrames == 0) { */
+  /*   if (frameX < 6) frameX++; */
+  /*   else frameX = 0; */
+  /* } */
   gameFrame++;
   //> peticion
   requestAnimationFrame(animate);
