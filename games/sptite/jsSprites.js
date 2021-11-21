@@ -13,15 +13,78 @@ const CANVAS_HEIGHT = (canvas.height = 600);
 // ==> Llevar la imagen (sprite) al proyecto <
 const playerImg = new Image();
 playerImg.src = `/games/sptite/img/shadow_dog.png`;
+
 //let x = 100;
 //let y = 0;
 const spriteWidth = 575;
 const spriteHeight = 523;
+
 //> Empezar de principio ( position) <
-let frameX = 0; // 0 * spriteWidth
-let frameY = 0; // 0 * spriteHeight
+//let frameX = 0; // 0 * spriteWidth
+//let frameY = 0; // 0 * spriteHeight
 let gameFrame = 0; // => Evitar los espacios en blanco <
 const staggerFrames = 2; //> Escalamiento / frameworks / v + a (velocidad + acelera)
+
+//> Datos / position del sprite / (x, y) (width, height) <
+const spriteAnimation = [];
+const animationStates = [
+  {
+    name: `inactive`,
+    frames: 7,
+  },
+  {
+    name: `jump`,
+    frames: 7,
+  },
+  {
+    name: `fail`,
+    frame: 7,
+  },
+  {
+    name: `run`,
+    frame: 9,
+  },
+  {
+    name: `dizzy`,
+    frame: 11,
+  },
+  {
+    name: `sit`,
+    frame: 5,
+  },
+  {
+    name: `roll`,
+    frame: 7,
+  },
+  {
+    name: `bite`,
+    frame: 7,
+  },
+  {
+    name: `ko`,
+    frame: 12,
+  },
+  {
+    name: `getHit`,
+    frame: 4,
+  },
+];
+//>
+animationStates.forEach((state, index) => {
+  let frames = {
+    // ubicación>
+    loc: [],
+  };
+  //> Ciclo para las coordinadas <
+  for (let j = 0; j < state.frames; j++) {
+    let positionX = j * spriteWidth;
+    let positionY = index * spriteHeight;
+    frames.loc.push({ x: positionX, y: positionY });
+  }
+
+  spriteAnimation[state.name] = frames;
+});
+console.log(animationStates);
 
 //> Crear animation <
 function animate() {
@@ -30,13 +93,20 @@ function animate() {
   //ctx.fillRect(x, 50, 100, 100);
   //> img / Tomar el sprite (encuadrar)
   //ctx.drawImage(Image, sx, sy, sw, sh, dx, dy, dw, dh);
-  let position = Math.floor(gameFrame / staggerFrames) % 6;
-  frameX = spriteWidth * position;
+  let position =
+    Math.floor(gameFrame / staggerFrames) %
+    spriteAnimation[`inactive`].loc.length;
+
+  let frameX = spriteWidth * position;
+  let frameY = spriteAnimation["jump"].loc[position].y;
+
+  //>
   ctx.drawImage(
     playerImg,
     //frameX * spriteWidth, // Img => recorrido Ancho / Horizontal
     frameX,
-    frameY * spriteHeight, // Recorrido => recorrido Alto / Vertical
+    //frameY * spriteHeight, // Recorrido => recorrido Alto / Vertical
+    frameY,
     spriteWidth,
     spriteHeight,
     0,
