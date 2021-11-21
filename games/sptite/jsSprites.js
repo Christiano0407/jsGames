@@ -19,6 +19,9 @@ playerImg.src = `/games/sptite/img/shadow_dog.png`;
 const spriteWidth = 575;
 const spriteHeight = 523;
 
+//> framework del juego >>
+let statePlayer = `inactive`;
+
 //> Empezar de principio ( position) <
 //let frameX = 0; // 0 * spriteWidth
 //let frameY = 0; // 0 * spriteHeight
@@ -95,10 +98,10 @@ function animate() {
   //ctx.drawImage(Image, sx, sy, sw, sh, dx, dy, dw, dh);
   let position =
     Math.floor(gameFrame / staggerFrames) %
-    spriteAnimation[`inactive`].loc.length;
+    spriteAnimation[statePlayer].loc.length;
 
   let frameX = spriteWidth * position;
-  let frameY = spriteAnimation["jump"].loc[position].y;
+  let frameY = spriteAnimation[statePlayer].loc[position].y;
 
   //>
   ctx.drawImage(
