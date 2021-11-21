@@ -26,7 +26,7 @@ let statePlayer = `inactive`;
 //let frameX = 0; // 0 * spriteWidth
 //let frameY = 0; // 0 * spriteHeight
 let gameFrame = 0; // => Evitar los espacios en blanco <
-const staggerFrames = 2; //> Escalamiento / frameworks / v + a (velocidad + acelera)
+const staggerFrames = 3; //> Escalamiento / frameworks / v + a (velocidad + acelera)
 
 //> Datos / position del sprite / (x, y) (width, height) <
 const spriteAnimation = [];
