@@ -38,31 +38,31 @@ const animationStates = [
   },
   {
     name: `fail`,
-    frame: 7,
+    frames: 7,
   },
   {
     name: `run`,
-    frame: 9,
+    frames: 9,
   },
   {
     name: `dizzy`,
-    frame: 11,
+    frames: 11,
   },
   {
     name: `sit`,
-    frame: 5,
+    frames: 5,
   },
   {
     name: `roll`,
-    frame: 7,
+    frames: 7,
   },
   {
     name: `bite`,
-    frame: 7,
+    frames: 7,
   },
   {
     name: `ko`,
-    frame: 12,
+    frames: 12,
   },
   {
     name: `getHit`,
