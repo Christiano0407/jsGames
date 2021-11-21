@@ -1,3 +1,12 @@
+// ===================================== Controls ==================================== <
+//> framework del juego >>
+let statePlayer = `inactive`;
+const dropDown = document.getElementById(`animations`);
+dropDown.addEventListener("change", (e) => {
+  statePlayer = e.target.value;
+});
+
+// ================================= CANVAS ===============================
 console.group("Canvas Sprite");
 // => Lienzo
 const canvas = document.getElementById(`canvas1`);
@@ -18,9 +27,6 @@ playerImg.src = `/games/sptite/img/shadow_dog.png`;
 //let y = 0;
 const spriteWidth = 575;
 const spriteHeight = 523;
-
-//> framework del juego >>
-let statePlayer = `inactive`;
 
 //> Empezar de principio ( position) <
 //let frameX = 0; // 0 * spriteWidth
@@ -69,7 +75,7 @@ const animationStates = [
   },
   {
     name: `getHit`,
-    frame: 4,
+    frames: 4,
   },
 ];
 //>
