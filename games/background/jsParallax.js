@@ -16,3 +16,16 @@ const backgroundLayer4 = new Image();
 backgroundLayer4.src = `/games/background/assets/layer-4.png`;
 const backgroundLayer5 = new Image();
 backgroundLayer5.src = `/games/background/assets/layer-5.png`;
+
+// > Animate Background <
+//> drawImage => Method
+//> requestAnimationFrame => Method e petición.
+let x = 0;
+
+function animate() {
+  ctx.clearRect(0, 0, canvas_width, canvas_height);
+  ctx.drawImage(backgroundLayer4, x, 0);
+  x -= gameSpeed;
+  requestAnimationFrame(animate);
+}
+animate();
