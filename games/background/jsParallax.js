@@ -26,6 +26,7 @@ showGameSpeed.innerHTML = gameSpeed;
 //> Slider agregar velocidad <
 slider.addEventListener(`change`, function (e) {
   gameSpeed = e.target.value;
+  showGameSpeed.innerHTML = e.target.value;
 });
 // Option / layes  (2)
 class Layer {
