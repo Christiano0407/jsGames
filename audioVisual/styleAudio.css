@@ -1,0 +1,33 @@
+/*Components*/
+@import url("/audioVisual/mainaudio.css");
+
+/*Root*/
+:root {
+  --clr-black: #000000;
+  --clr-white: #ffffff;
+}
+
+/*Style General*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  width: 100%;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
