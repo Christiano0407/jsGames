@@ -33,10 +33,10 @@ class Layer {
   //method / function
   update() {
     this.speed = gameSpeed * this.speedModifier;
-    if (this.x <= this.width) {
+    if (this.x <= -this.width) {
       this.x = this.width + this.x2 - this.speed;
     }
-    if (this.x2 <= this.width) {
+    if (this.x2 <= -this.width) {
       this.x2 = this.width + this.x - this.speed;
     }
     this.x = Math.floor(this.x - this.speed);
@@ -47,10 +47,16 @@ class Layer {
     ctx.drawImage(this.image, this.x2, this.y, this.width, this.height);
   }
 }
-
+//> Image / Animations =>
+const layer1 = new Layer(backgroundLayer1, 0.5);
+const layer2 = new Layer(backgroundLayer2, 0.5);
+const layer3 = new Layer(backgroundLayer3, 0.5);
 const layer4 = new Layer(backgroundLayer4, 0.5);
+const layer5 = new Layer(backgroundLayer5, 1);
 
 // > Animate Background <
+const gameObjects = [layer1, layer2, layer3, layer4, layer5];
+
 //> drawImage => Method
 //> requestAnimationFrame => Method e petición.
 // < Option (1) >
@@ -59,6 +65,12 @@ const layer4 = new Layer(backgroundLayer4, 0.5);
 //> -2400 0 2400 <
 function animate() {
   ctx.clearRect(0, 0, canvas_width, canvas_height);
+  // > Method <
+  gameObjects.forEach((object) => {
+    object.update();
+    object.draw();
+  });
+  requestAnimationFrame(animate);
   // < (1) >
   /* ctx.drawImage(backgroundLayer4, x, 0); */
   /*  ctx.drawImage(backgroundLayer4, x2, 0); */
@@ -70,9 +82,6 @@ function animate() {
   /* } */
   /* if (x2 < -2400) x2 = 2400 - gameSpeed; */
   /* else x2 -= gameSpeed; */
-  layer4.update();
-  layer4.draw();
-  requestAnimationFrame(animate);
 }
 animate();
 
