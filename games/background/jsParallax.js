@@ -16,7 +16,17 @@ const backgroundLayer4 = new Image();
 backgroundLayer4.src = `/games/background/assets/layer-4.png`;
 const backgroundLayer5 = new Image();
 backgroundLayer5.src = `/games/background/assets/layer-5.png`;
-
+//> Slider <
+const slider = document.getElementById(`slider`);
+console.log(slider);
+slider.value = gameSpeed;
+const showGameSpeed = document.getElementById(`showGameSpeed`);
+//> Inner HTML >
+showGameSpeed.innerHTML = gameSpeed;
+//> Slider agregar velocidad <
+slider.addEventListener(`change`, function (e) {
+  gameSpeed = e.target.value;
+});
 // Option / layes  (2)
 class Layer {
   //> Properties / methods <

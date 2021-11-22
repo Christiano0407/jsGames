@@ -33,3 +33,6 @@ body {
   width: 100%;
   background: var(--clr-black);
 }
+main {
+  width: 100%;
+}
