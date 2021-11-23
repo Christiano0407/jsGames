@@ -9,10 +9,15 @@
 /* Root */
 /*------------------*/
 :root {
+  /*Color RGB*/
   --clr-white: #ffffff;
   --clr-black: #000000;
   --clr-back1: #0b0d17;
   --clr-back2: #d0d6f9;
+  /*Color HSL*/
+  --clr-dark: hsl(230 35% 7%);
+  --clr-light: hsl(231 77% 99%);
+  --clr-hslWhite: hsl(0 0% 100%);
   /*Font*/
   /* --font-base: font-family: 'Bellefair', serif; */
   --font-family: "Bellefair", serif;

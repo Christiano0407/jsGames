@@ -14,6 +14,7 @@
   margin-inline: auto;
   max-width: 60rem;
 }
+/*Others*/
 .sr-only {
   position: absolute;
   width: 1px;
@@ -34,4 +35,24 @@
   background: violet;
   padding: 2rem;
   border-radius: 1rem;
+}
+/* COLORS */
+.bg-dark {
+  background-color: var(--clr-dark);
+}
+.bg-light {
+  background-color: var(--clr-light);
+}
+.bg-hslWhite {
+  background-color: var(--clr-hslWhite);
+}
+/*Color Text*/
+.text-dark {
+  background-color: var(--clr-dark);
+}
+.text-light {
+  background-color: var(--clr-light);
+}
+.text-hslWhite {
+  background-color: var(--clr-hslWhite);
 }
