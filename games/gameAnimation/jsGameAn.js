@@ -38,11 +38,16 @@ class Enemy {
     this.y = Math.random() * (canvas.height - this.height);
     this.frame = 0; // Movimiento del sprite (desde cero) <
     this.flapSpeed = Math.floor(Math.random() * 3 + 1);
+    //> Angle (2 sprite)
+    this.angle = 0; //Math.random() * 2;
+    this.angleSpeed = Math.random() * 0.3;
+    this.curve = Math.random() * 5; // Angle de movimiento (Arriba a bajo)
   }
   // Methods
   update() {
     this.x -= this.speed; // This.speed;
-    //this.y += Math.random() * 4 - 2;
+    this.y += this.curve * Math.sin(this.angle); //(1)=Math.random() * 4 - 2;
+    this.angle += this.angleSpeed;
     //(2 sprite)
     if (this.x + this.width < 0) {
       this.x = canvas.width;
