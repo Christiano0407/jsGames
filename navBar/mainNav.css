@@ -1,9 +1,9 @@
 /*------------------*/
 /*--------Components--------*/
 /*------------------*/
-@import url("/navBar/mediaQuerie.css");
-@import url("/navBar/navBarCSS.css");
-@import url("/navBar/generalClass.css");
+@import url("/navBar/cssDesignSystem/mediaQueries.css");
+@import url("/navBar/cssDesignSystem/navBarCSS.css");
+@import url("/navBar/cssDesignSystem/generalClass.css");
 
 /*------------------*/
 /* Root */
