@@ -4,6 +4,21 @@
 :root {
   --clr-white: #ffffff;
   --clr-black: #000000;
+  --clr-back1: #0b0d17;
+  --clr-back2: #d0d6f9;
+  /*Font*/
+  /* --font-base: font-family: 'Bellefair', serif; */
+  --font-family: "Bellefair", serif;
+  --font-heading1: 150px;
+  --font-heading2: 100px;
+  --font-heading3: 56px;
+  --font-heading4: 32px;
+  --font-heading5: 28px;
+  --font-subheading1: 16px;
+  --character-spacing1: 2.35px;
+  --font-subheading: 14px;
+  --nav-text: 16px;
+  --character-spacing2: 2.7px;
 }
 /* Style Main*/
 * {
@@ -31,4 +46,5 @@ p {
 }
 body {
   width: 100%;
+  font: var(--font-family);
 }
