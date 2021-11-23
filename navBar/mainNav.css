@@ -1,4 +1,4 @@
-/*Components*/
+/*--------Components--------*/
 @import url("/navBar/navBarCSS.css");
 /*Root*/
 :root {
@@ -21,7 +21,9 @@
   --character-spacing2: 2.7px;
 }
 /* Style Main*/
-* {
+*,
+::before,
+::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -35,16 +37,49 @@ ul {
 a {
   text-decoration: none;
 }
-img {
+img,
+picture {
   object-fit: cover;
   background-size: cover;
   background-position: center;
   background-position: center;
+  max-width: 100%;
+  display: block;
 }
 p {
   letter-spacing: 1;
+  margin: 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+picture {
+  margin: 0;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* Set up the Body */
 body {
   width: 100%;
+  min-height: 100vh;
   font: var(--font-family);
+  line-height: 1.5;
+}
+/* Remove Animations*/
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
