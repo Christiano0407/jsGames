@@ -3,11 +3,11 @@
 /* -------------------*/
 .flex {
   display: flex;
-  gap: var(--gap, 1rem);
+  gap: var(--gap);
 }
 .grid {
   display: grid;
-  gap: var(--gap, 1rem);
+  gap: var(--gap);
 }
 .container {
   padding-inline: 2rem;
@@ -28,4 +28,10 @@
 .box {
   background: lightblue;
   padding: 3rem;
+}
+.cta {
+  gap: 5rem;
+  background: violet;
+  padding: 2rem;
+  border-radius: 1rem;
 }
