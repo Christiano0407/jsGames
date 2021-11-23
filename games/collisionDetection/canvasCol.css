@@ -7,3 +7,14 @@
   height: 50rem;
   border: 4px solid red;
 }
+
+#rect1 {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  background-color: red;
+  border: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
