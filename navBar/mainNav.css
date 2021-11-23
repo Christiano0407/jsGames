@@ -1,6 +1,11 @@
+/*------------------*/
 /*--------Components--------*/
+/*------------------*/
 @import url("/navBar/navBarCSS.css");
-/*Root*/
+
+/*------------------*/
+/* Root */
+/*------------------*/
 :root {
   --clr-white: #ffffff;
   --clr-black: #000000;
@@ -19,8 +24,11 @@
   --font-subheading: 14px;
   --nav-text: 16px;
   --character-spacing2: 2.7px;
+  --gap: 1rem;
 }
-/* Style Main*/
+/*------------------*/
+/* Style Main */
+/*------------------*/
 *,
 ::before,
 ::after {
@@ -72,7 +80,10 @@ body {
   font: var(--font-family);
   line-height: 1.5;
 }
+
+/*------------------*/
 /* Remove Animations*/
+/*------------------*/
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -82,4 +93,32 @@ body {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* --------------------*/
+/* Utility Classes*/
+/* -------------------*/
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+.container {
+  padding-inline: 2rem;
+  margin-inline: auto;
+  max-width: 80rem;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
