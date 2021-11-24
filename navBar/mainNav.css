@@ -1,9 +1,9 @@
 /*------------------*/
 /*--------Components--------*/
 /*------------------*/
-@import url("/navBar/cssDesignSystem/mediaQueries.css");
-@import url("/navBar/cssDesignSystem/navBarCSS.css");
-@import url("/navBar/cssDesignSystem/generalClass.css");
+@import url("/cssDesignSystem/mediaQueries.css");
+@import url("/cssDesignSystem/navBarCSS.css");
+@import url("/cssDesignSystem/generalClass.css");
 
 /*------------------*/
 /* Root */
@@ -86,4 +86,5 @@ body {
   min-height: 100vh;
   font: var(--font-family);
   line-height: 1.5;
+  background: #000000;
 }
