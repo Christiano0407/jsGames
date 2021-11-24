@@ -85,8 +85,12 @@ select {
 }
 /* Set up the Body */
 body {
-  width: 100%;
   min-height: 100vh;
-  font: var(--font-family);
+  font-family: var(--ff-sans-normal);
+  font-size: var(--fs-400);
+  color: var(--clr-white);
+  background-color: var(--clr-dark);
   line-height: 1.5;
 }
+
+/*General Class*/
