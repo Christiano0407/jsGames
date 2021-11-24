@@ -19,19 +19,22 @@
   --clr-light: hsl(231 77% 99%);
   --clr-hslWhite: hsl(0 0% 100%);
   /*Font*/
-  /* --font-base: font-family: 'Bellefair', serif; */
-  --font-family: "Bellefair", serif;
-  --font-heading1: 150px;
-  --font-heading2: 100px;
-  --font-heading3: 56px;
-  --font-heading4: 32px;
-  --font-heading5: 28px;
-  --font-subheading1: 16px;
-  --character-spacing1: 2.35px;
-  --font-subheading: 14px;
-  --nav-text: 16px;
-  --character-spacing2: 2.7px;
+  /*font-sizes*/
+  --fs-900: 9.375rem;
+  --fs-800: 6.25rem;
+  --fs-700: 3.5rem;
+  --fs-600: 2rem;
+  --fs-500: 1.75rem;
+  --fs-400: 1.125rem;
+  --fs-300: 1rem;
+  --fs-200: 0.875rem;
+  /*Gap*/
   --gap: 1rem;
+  /*Font-Families*/
+  /* --font-base: font-family: 'Bellefair', serif; */
+  --font-serif: "Bellefair", serif;
+  --ff-sans-cond: "Barlow Condensed", sans-serif;
+  --ff-sans-normal: "Barlow", sans-serif;
 }
 /*------------------*/
 /* Style Main */
@@ -86,5 +89,4 @@ body {
   min-height: 100vh;
   font: var(--font-family);
   line-height: 1.5;
-  background: #000000;
 }
