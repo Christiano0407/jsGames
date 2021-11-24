@@ -9,6 +9,10 @@
   display: grid;
   gap: var(--gap);
 }
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--flow-space, 1rem);
+  outline: 1px solid red;
+}
 .container {
   padding-inline: 2rem;
   margin-inline: auto;
