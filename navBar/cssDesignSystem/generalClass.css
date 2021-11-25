@@ -130,3 +130,15 @@
   font-weight: 700;
   color: var(--clr-hslWhite) / 0.25;
 }
+
+/* ------------------- */
+/* Compontents CSS         */
+/* ------------------- */
+.large-button {
+  display: grid;
+  place-items: center;
+  padding: 0 2rem;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  text-decoration: none;
+}
