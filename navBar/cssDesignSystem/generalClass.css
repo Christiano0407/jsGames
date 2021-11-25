@@ -130,34 +130,3 @@
   font-weight: 700;
   color: var(--clr-hslWhite) / 0.25;
 }
-
-/* ------------------- */
-/* Compontents CSS         */
-/* ------------------- */
-.large-button {
-  display: grid;
-  position: relative;
-  z-index: 1;
-  place-items: center;
-  padding: 0 2rem;
-  border-radius: 50%;
-  aspect-ratio: 1;
-  text-decoration: none;
-}
-/* =Agergar un elemento al botón pero, después =*/
-.large-button::after {
-  content: ""; /*Agregamos un contenido*/
-  position: absolute; /*Toma posición de large button*/
-  z-index: -1; /*Detrás del button*/
-  width: 100%;
-  height: 100%;
-  background-color: var(--clr-hslWhite) / 0.1;
-  border-radius: 50%;
-  opacity: 0;
-  transition: opacity 500ms linear, transform 750ms ease-in-out;
-}
-.large-button:hover::after,
-.large-button:focus::after {
-  opacity: 1;
-  transform: scale(1.5);
-}
