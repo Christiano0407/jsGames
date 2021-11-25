@@ -62,3 +62,7 @@
   border-color: #0903a6;
   /* opacity: 1 */
 }
+
+.tab-list {
+  gap: 2rem;
+}
