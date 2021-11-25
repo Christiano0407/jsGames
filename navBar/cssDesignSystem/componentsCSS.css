@@ -43,6 +43,22 @@
   font-weight: 700;
   margin-right: 0.5rem;
 }
-
+/*Underline Indicators (Líneas / active)*/
 .underline-indicators > * {
+  cursor: pointer;
+  padding: 1rem;
+  border: 0;
+  border-bottom: 0.2rem solid var(--clr-hslWhite);
+}
+.underline-indicators > *:hover,
+.underline-indicators > *:focus {
+  border-color: var(--clr-hslWhite);
+  opacity: 0.3;
+}
+.underline-indicators > .active,
+.underline-indicators > [aria-selected="true"] {
+  color: #0903a6;
+  /* opacity: 1; */
+  border-color: #0903a6;
+  /* opacity: 1 */
 }
