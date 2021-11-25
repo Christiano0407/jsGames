@@ -77,7 +77,8 @@
 .dot-indicators > *:hover,
 .dot-indicators > *:focus {
   background-color: var(--clr-hslWhite);
+  opacity: 0.3;
 }
 .dot-indicators> [aria-selected: "true" ] {
-  background-color: #0903a6;
+  background: #0903a6;
 }
