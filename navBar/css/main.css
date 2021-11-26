@@ -13,7 +13,8 @@
   --clr-white: 0 0% 100%;
 
   /* font-sizes */
-  --fs-900: 9.375rem;
+  /* --fs-900: 9.375rem; */
+  --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
   --fs-800: 6.25rem;
   --fs-700: 3.5rem;
   --fs-600: 2rem;
@@ -39,6 +40,10 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 /* Reset margins */
@@ -75,6 +80,7 @@ body {
 
   display: grid;
   grid-template-rows: min-content 1fr;
+  /* border: 5px solid red; */
 }
 
 /* make images easier to work with */
@@ -122,6 +128,7 @@ select {
   border: 5px solid limegreen;
   display: grid;
 }
+/*Media querie ==> */
 
 .sr-only {
   position: absolute;

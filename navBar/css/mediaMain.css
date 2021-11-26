@@ -2,6 +2,27 @@
 /* Media Queries     */
 /* ------------------- */
 
+/*Root tipography*/
+/*350px*/
+@media (min-width: 35rem) {
+  :root {
+    --fs-800: 5rem;
+    --fs-700: 2.5rem;
+    --fs-600: 1.5rem;
+    --fs-400: 1rem;
+  }
+}
+/* 450 px*/
+@media (min-width: 45rem) {
+  :root {
+    /* font-sizes */
+    --fs-800: 6.25rem;
+    --fs-700: 3.5rem;
+    --fs-600: 2rem;
+    --fs-400: 1.125rem;
+  }
+}
+
 /* remove animations for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -14,6 +35,7 @@
   }
 }
 
+/* =Responsive Web / Media Queries =*/
 @media (min-width: 45rem) {
   .grid-container {
     column-gap: var(--container-gap, 2rem);
@@ -31,5 +53,9 @@
   .grid-container > *:last-child {
     grid-column: 3;
     outline: 1px solid yellow;
+  }
+  .grid-container--home {
+    padding-bottom: max(6rem, 20vh);
+    align-items: end;
   }
 }
