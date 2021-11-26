@@ -1,3 +1,7 @@
+@import url(/css/mediaMain.css);
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
 /* ------------------- */
 /* Custom properties   */
 /* ------------------- */
@@ -35,8 +39,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 /* Reset margins */
@@ -70,6 +72,9 @@ body {
   background-color: hsl(var(--clr-dark));
   line-height: 1.5;
   min-height: 100vh;
+
+  display: grid;
+  grid-template-rows: min-content 1fr;
 }
 
 /* make images easier to work with */
@@ -85,21 +90,6 @@ button,
 textarea,
 select {
   font: inherit;
-}
-
-/* ------------------- */
-/* Media Queries     */
-/* ------------------- */
-/* remove animations for people who've turned them off */
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
 }
 
 /* ------------------- */
@@ -126,6 +116,11 @@ select {
   padding-inline: 2em;
   margin-inline: auto;
   max-width: 80rem;
+}
+
+.grid-container {
+  border: 5px solid limegreen;
+  display: grid;
 }
 
 .sr-only {
@@ -240,7 +235,7 @@ select {
 .large-button {
   position: relative;
   z-index: 1;
-  display: grid;
+  display: inline-grid;
   place-items: center;
   padding: 0 2em;
   border-radius: 50%;
