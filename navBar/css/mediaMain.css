@@ -38,7 +38,7 @@
 /* =Responsive Web / Media Queries =*/
 @media (min-width: 45rem) {
   .grid-container {
-    text-align: center;
+    text-align: left;
     column-gap: var(--container-gap, 2rem);
     grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(
         1rem,
