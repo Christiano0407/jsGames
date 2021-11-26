@@ -38,9 +38,10 @@
 /* =Responsive Web / Media Queries =*/
 @media (min-width: 45rem) {
   .grid-container {
+    text-align: center;
     column-gap: var(--container-gap, 2rem);
-    grid-template-columns: minmax(2rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(
-        2rem,
+    grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(
+        1rem,
         1fr
       );
   }

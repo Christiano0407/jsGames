@@ -3,6 +3,7 @@
 /* ------------------- */
 
 .large-button {
+  font-size: 2rem;
   position: relative;
   z-index: 1;
   display: inline-grid;
