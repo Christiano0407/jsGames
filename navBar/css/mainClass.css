@@ -28,7 +28,7 @@
 }
 
 .grid-container {
-  border: 5px solid limegreen;
+  /* border: 5px solid limegreen; */
   display: grid;
   text-align: center;
   place-items: center;

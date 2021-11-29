@@ -83,8 +83,6 @@ body {
   display: grid;
   grid-template-rows: min-content 1fr;
   /* border: 5px solid red; */
-  background-size: cover;
-  background-position: bottom center;
 }
 
 /* make images easier to work with */
@@ -114,7 +112,13 @@ select {
 /* Page specific background      */
 /* ----------------------------- */
 /* home */
-.home {
-  background-image: url("/assets/home/background-home-mobile.jpg");
-  object-fit: cover;
+body {
+  background-size: cover;
+  background-position: bottom center;
 }
+
+/* home */
+/* .home { */
+/*   background-image: url("/assets/home/background-home-mobile.jpg"); */
+/*   background-size: cover; */
+/* } */
