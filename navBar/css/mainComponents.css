@@ -33,11 +33,17 @@
 }
 
 .primary-navigation {
-  --gap: 8rem;
+  /* --gap: 8rem; */
   --underline-gap: 2rem;
   list-style: none;
   padding: 0;
   margin: 0;
+  background: hsl(var(--clr-white) / 0.5)));
+  backdrop-filter: blur(1.5rem)
+}
+
+.mobile-nav-toggle {
+  display: none;
 }
 
 .primary-navigation a {
