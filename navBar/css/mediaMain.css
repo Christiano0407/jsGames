@@ -64,7 +64,7 @@
 /* ----------------------------- */
 /* Page specific background      */
 /* ----------------------------- */
-@media (max-width: 34rem) {
+@media (max-width: 35rem) {
   .home {
     background-image: url("/assets/home/background-home-mobile.jpg");
     background-size: cover;
@@ -85,7 +85,7 @@
     --underline-gap: 0.5rem;
     position: fixed;
     z-index: 1000;
-    inset: 0 0 0 30%;
+    inset: 0 0 0 25%;
     list-style: none;
     padding: min(28rem, 15vh) 2rem;
     margin: 0;
@@ -107,7 +107,8 @@
     background-image: url("/assets/shared/icon-hamburger.svg");
     background-position: center;
     background-repeat: no-repeat;
-    width: 1.5rem;
+    width: 2rem;
+    height: 2rem;
     aspect-ratio: 1;
     border: 0;
   }
@@ -119,6 +120,20 @@
   .mobile-nav-toggle:focus-visible {
     outline: 5px solid white;
     outline-offset: 5px;
+  }
+}
+
+@media (hover: hover) {
+  .underline-indicators > *:hover {
+    border-color: hsl(var(--clr-white) / 0.5);
+  }
+}
+
+@media (min-width: 35rem) {
+  .underline-indicators > .active,
+  .underline-indicators > [aria-selected="true"] {
+    color: hsl(var(--clr-white) / 1);
+    border-color: hsl((var(--clr-white) / 1));
   }
 }
 
