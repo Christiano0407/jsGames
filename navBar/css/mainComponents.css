@@ -53,7 +53,7 @@
 }
 
 .mobile-nav-toggle {
-  display: block;
+  display: none;
 }
 
 .primary-navigation a {
