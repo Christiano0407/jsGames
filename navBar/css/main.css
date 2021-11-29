@@ -83,11 +83,12 @@ body {
   display: grid;
   grid-template-rows: min-content 1fr;
   /* border: 5px solid red; */
+  overflow: hidden;
 }
 
 /* make images easier to work with */
 img,
-picutre {
+picture {
   max-width: 100%;
   display: block;
 }
