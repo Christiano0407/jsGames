@@ -60,3 +60,21 @@
     align-items: end;
   }
 }
+
+/* ----------------------------- */
+/* Page specific background      */
+/* ----------------------------- */
+@media (min-width: 35rem) {
+  .home {
+    background-position: center center;
+    background-image: url("/assets/home/background-home-tablet.jpg");
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 45rem) {
+  .home {
+    background-image: url("/assets/home/background-home-desktop.jpg");
+    object-fit: cover;
+  }
+}

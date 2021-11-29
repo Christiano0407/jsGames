@@ -87,3 +87,13 @@
 .dot-indicators > [aria-selected="true"] {
   background-color: hsl(var(--clr-white) / 1);
 }
+
+/* ----------------------------- */
+/* Page specific background      */
+/* ----------------------------- */
+/* body { */
+/*   background-size: cover; */
+/*   background-position: bottom center; */
+/* } */
+
+/* home */
