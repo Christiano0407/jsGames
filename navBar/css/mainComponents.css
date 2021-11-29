@@ -32,8 +32,18 @@
   transform: scale(1.5);
 }
 
+/* primary-header */
+.logo {
+  margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
+}
+
+.primary-header {
+  justify-content: space-between;
+  align-items: center;
+}
+
 .primary-navigation {
-  /* --gap: 8rem; */
+  --gap: clamp(1.5rem, 5vw, 3.5rem);
   --underline-gap: 2rem;
   list-style: none;
   padding: 0;
@@ -43,7 +53,7 @@
 }
 
 .mobile-nav-toggle {
-  /*display: none;*/
+  display: none;
 }
 
 .primary-navigation a {

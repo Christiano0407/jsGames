@@ -97,9 +97,13 @@
     transform: translateX(0);
   }
 
+  .primary-navigation.underline-indicators > .active {
+    border: 0;
+  }
+
   .mobile-nav-toggle {
-    position: absolute;
     display: block;
+    position: absolute;
     z-index: 2000;
     right: 1rem;
     top: 2rem;
@@ -134,6 +138,18 @@
   .underline-indicators > [aria-selected="true"] {
     color: hsl(var(--clr-white) / 1);
     border-color: hsl((var(--clr-white) / 1));
+  }
+}
+
+@media (min-width: 35rem) {
+  .primary-navigation {
+    padding-inline: clamp(3rem, 7vw, 7rem);
+  }
+}
+
+@media (min-width: 35rem) and (max-width: 45rem) {
+  .primary-navigation a > span {
+    display: none;
   }
 }
 
